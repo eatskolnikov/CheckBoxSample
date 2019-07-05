@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design" 
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" 
+    xmlns:input="clr-namespace:Plugin.InputKit.Shared.Controls;assembly=Plugin.InputKit"
+    
+    x:Class="CheckboxSample.MainPage">
+    
+    <Grid VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+            
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.25*"></ColumnDefinition>
+            <ColumnDefinition Width="0.25*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <CheckBox Grid.Row="1" Grid.Column="1" VerticalOptions="Center" />
+        <Label Grid.Row="1" Grid.Column="2" Text="Default checkbox" VerticalOptions="Center" />
+        
+        <CheckBox Grid.Row="2" Grid.Column="1" VerticalOptions="Center" Color="Red"/>
+        <Label Grid.Row="2" Grid.Column="2" Text="Red checkbox" VerticalOptions="Center"/>
+        
+        <CheckBox Grid.Row="3" Grid.Column="1" Color="Green" IsChecked="true" VerticalOptions="Center"/>
+        <Label Grid.Row="3" Grid.Column="2" Text="Green checkbox" VerticalOptions="Center"/>
+        
+        
+    </Grid>
+</ContentPage>
